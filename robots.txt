@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://musclemax-mojosari.vercel.app/sitemap.xml

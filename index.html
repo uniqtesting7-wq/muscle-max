@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#E8141E" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>MuscleMax Mojosari – Gym & Fitness Center Terbaik di Mojosari</title>
+
+  <!-- ═══ SEO META TAGS ═══ -->
+  <meta name="description" content="MuscleMax Mojosari adalah gym & fitness center terbaik di Mojosari. Program bodybuilding, HIIT, yoga, zumba, dan personal training dengan trainer berpengalaman. Daftar sekarang!" />
+  <meta name="keywords" content="gym mojosari, fitness center mojosari, bodybuilding mojosari, personal training mojosari, tempat gym mojosari, olahraga mojosari, MuscleMax" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="MuscleMax Mojosari" />
+  <meta name="geo.region" content="ID-JI" />
+  <meta name="geo.placename" content="Mojosari, Jawa Timur" />
+  <link rel="canonical" href="https://musclemax-mojosari.vercel.app/" />
+
+  <!-- ═══ OPEN GRAPH (Facebook, WhatsApp, dll) ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MuscleMax Mojosari" />
+  <meta property="og:title" content="MuscleMax Mojosari – Gym & Fitness Center Terbaik" />
+  <meta property="og:description" content="Gym & fitness center terbaik di Mojosari. Trainer profesional, peralatan lengkap, berbagai program latihan. Mulai perjalanan fitnessmu sekarang!" />
+  <meta property="og:url" content="https://musclemax-mojosari.vercel.app/" />
+  <meta property="og:image" content="https://musclemax-mojosari.vercel.app/assets/images/hero-bg.svg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
+  <meta property="og:image:alt" content="MuscleMax Mojosari Gym" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MuscleMax Mojosari – Gym & Fitness Center Terbaik" />
+  <meta name="twitter:description" content="Gym & fitness center terbaik di Mojosari. Trainer profesional, peralatan lengkap, berbagai program latihan. Mulai perjalanan fitnessmu sekarang!" />
+  <meta name="twitter:image" content="https://musclemax-mojosari.vercel.app/assets/images/hero-bg.svg" />
+
+  <!-- ═══ SCHEMA.ORG JSON-LD ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GymOrHealthClub",
+    "name": "MuscleMax Mojosari",
+    "description": "MuscleMax Mojosari adalah gym & fitness center terbaik di Mojosari. Program bodybuilding, HIIT, yoga, zumba, dan personal training dengan trainer berpengalaman. Daftar sekarang!",
+    "url": "https://musclemax-mojosari.vercel.app",
+    "telephone": "+6282231202288",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Pahlawan No. 28",
+      "addressLocality": "Mojosari",
+      "addressRegion": "Jawa Timur",
+      "postalCode": "61382",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -7.5472,
+      "longitude": 112.5186
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "22:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/musclemax_mjs",
+      "https://wa.me/6282231202288"
+    ],
+    "priceRange": "Rp20.000 – Rp1.800.000",
+    "image": "https://musclemax-mojosari.vercel.app/assets/images/hero-bg.svg"
+  }
+  </script>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="nav-progress" id="navProgress"></div>
+
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="data:image/png;base64,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" alt="MuscleMax Mojosari" class="navbar-logo-img" />
+    </a>
+    <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" style="color:#fff;background:rgba(232,20,30,.15);border:1px solid rgba(232,20,30,.3) !important;border-radius:6px;">
+      <i class="bi bi-list fs-3"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="programs.html">Program</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Jadwal</a></li>
+        <li class="nav-item"><a class="nav-link" href="membership.html">Membership</a></li>
+        <li class="nav-item"><a class="nav-link" href="promo.html">Promo</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Trainer</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Daftar</a></li>
+      </ul>
+      <a href="https://wa.me/6282231202288?text=Halo%20MuscleMax%20Mojosari!%20Saya%20ingin%20bergabung%20sebagai%20member." target="_blank" class="btn btn-wa ms-2">
+        <i class="bi bi-whatsapp"></i> Hubungi Kami
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div id="page-home" class="mm-page active">
+  <!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg-layer" id="heroBgLayer"></div>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-lg-8">
+        <p class="hero-eyebrow" id="heroEye">Gym Terbaik di Mojosari</p>
+        <h1 class="hero-title" id="heroTitle">
+          PUSH<br>YOUR<br><span>LIMITS</span>
+        </h1>
+        <p class="hero-sub" id="heroSub">
+          Fasilitas premium, trainer profesional, dan komunitas yang solid untuk membentuk tubuh impian kamu di jantung Mojosari.
+        </p>
+        <div class="hero-cta" id="heroCta">
+          <a href="booking.html" class="btn-primary-mm">
+            <i class="bi bi-lightning-fill"></i> Daftar Sekarang
+          </a>
+          <!-- <a href="programs.html" class="btn-outline-mm"><i class="bi bi-play-circle"></i> Lihat Program</a> -->
+        </div>
+        <div class="hero-stats" id="heroStats">
+          <div class="stat-item">
+            <div class="stat-num" data-count="500">0</div>
+            <div class="stat-label">Member Aktif</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="12">0</div>
+            <div class="stat-label">Trainer Pro</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="6">0</div>
+            <div class="stat-label">Tahun Berdiri</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num" data-count="15">0</div>
+            <div class="stat-label">Program Kelas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-badge" id="heroBadge">
+    <div class="badge-big">24/7</div>
+    <div class="badge-sm">Akses Gym</div>
+  </div>
+</section>
+  <!-- ===== MARQUEE ===== -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <!-- double for seamless loop -->
+    <span class="marquee-item">MUSCLEMAX MOJOSARI</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">FITNESS &amp; BODYBUILDING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">STRENGTH TRAINING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">PERSONAL TRAINER</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">CARDIO &amp; HIIT</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">MUSCLE BUILDING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">MOJOSARI · JAWA TIMUR</span><span class="marquee-item marquee-dot">✦</span>
+    <!-- repeat -->
+    <span class="marquee-item">MUSCLEMAX MOJOSARI</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">FITNESS &amp; BODYBUILDING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">STRENGTH TRAINING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">PERSONAL TRAINER</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">CARDIO &amp; HIIT</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">MUSCLE BUILDING</span><span class="marquee-item marquee-dot">✦</span>
+    <span class="marquee-item">MOJOSARI · JAWA TIMUR</span><span class="marquee-item marquee-dot">✦</span>
+  </div>
+</div>
+  <!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 reveal">
+        <div class="about-img-wrap">
+          <img class="about-img-main" src="assets/images/about-main.svg" alt="MuscleMax Gym Interior" />
+          <img class="about-img-accent" src="assets/images/gallery-4.svg" alt="Training" />
+        </div>
+      </div>
+      <div class="col-lg-7 about-text reveal">
+        <p class="section-tag">Tentang Kami</p>
+        <h2 class="section-title">TEMPAT DI MANA<br>BATAS DILAMPAUI</h2>
+        <div class="red-line mb-4"></div>
+        <p style="color:var(--muted);font-size:16px;line-height:1.8;margin-bottom:28px;">
+          MuscleMax Mojosari hadir sejak 2018 sebagai pusat fitness terlengkap di Mojosari, Jawa Timur. Kami berkomitmen memberikan pengalaman training terbaik dengan peralatan modern, trainer bersertifikat, dan suasana yang memotivasi setiap langkah perjalanan fitness kamu.
+        </p>
+        <div class="about-feature">
+          <i class="bi bi-award-fill"></i>
+          <div>
+            <h6>Trainer Bersertifikat Nasional</h6>
+            <p>Tim trainer kami tersertifikasi dan berpengalaman membantu kamu mencapai target fitness secara aman dan efektif.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <i class="bi bi-box-seam-fill"></i>
+          <div>
+            <h6>Peralatan Gym Modern &amp; Lengkap</h6>
+            <p>Lebih dari 100 unit alat gym premium dari barbell, dumbell, mesin cardio, hingga area functional training.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <i class="bi bi-people-fill"></i>
+          <div>
+            <h6>Komunitas Supportif</h6>
+            <p>Bergabung dengan komunitas 500+ member aktif yang saling mendukung dan memotivasi setiap harinya.</p>
+          </div>
+        </div>
+        <div class="about-feature">
+          <i class="bi bi-clock-fill"></i>
+          <div>
+            <h6>Operasional 6 Hari Seminggu</h6>
+            <p>Buka setiap hari pukul 08:00–22:00, cocok untuk jadwal kerja dan kuliah yang padat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== PROGRAMS ===== (hidden sementara)
+<section id="programs">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag">Program Latihan</p>
+        <h2 class="section-title">PILIH PROGRAM<br>YANG TEPAT</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-end reveal">
+        <p style="color:var(--muted);font-size:15px;line-height:1.7;">
+          Setiap program dirancang khusus oleh trainer profesional kami untuk memaksimalkan hasil latihan sesuai level dan tujuan fitness kamu.
+        </p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(0)" role="button" tabindex="0">
+          <img src="assets/images/program-bodybuilding.svg" alt="Bodybuilding" />
+          <div class="card-body-mm">
+            <span class="program-badge">Populer</span>
+            <h5>Bodybuilding &amp; Mass</h5>
+            <p>Program intensif untuk membangun massa otot, kekuatan, dan definisi tubuh dengan metode hypertrophy training.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 90 Menit</span>
+              <span><i class="bi bi-bar-chart"></i> Semua Level</span>
+              <span><i class="bi bi-person"></i> 20 Slot</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(1)" role="button" tabindex="0">
+          <img src="assets/images/program-hiit.svg" alt="HIIT Cardio" />
+          <div class="card-body-mm">
+            <span class="program-badge">Terlaris</span>
+            <h5>HIIT Cardio Blast</h5>
+            <p>Bakar kalori maksimal dengan latihan interval intensitas tinggi yang efektif dan menyenangkan.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 60 Menit</span>
+              <span><i class="bi bi-bar-chart"></i> Intermediate</span>
+              <span><i class="bi bi-person"></i> 25 Slot</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(2)" role="button" tabindex="0">
+          <img src="assets/images/program-personal.svg" alt="Personal Training" />
+          <div class="card-body-mm">
+            <span class="program-badge">Premium</span>
+            <h5>Personal Training</h5>
+            <p>Sesi 1-on-1 dengan trainer pribadi untuk program latihan yang 100% disesuaikan dengan tubuh dan goal kamu.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 60–90 Min</span>
+              <span><i class="bi bi-bar-chart"></i> Custom</span>
+              <span><i class="bi bi-person"></i> Privat</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(3)" role="button" tabindex="0">
+          <img src="assets/images/program-zumba.svg" alt="Zumba" />
+          <div class="card-body-mm">
+            <span class="program-badge">Fun</span>
+            <h5>Zumba &amp; Aerobik</h5>
+            <p>Olahraga menyenangkan dengan gerakan tari yang membakar lemak, cocok untuk semua usia.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 60 Menit</span>
+              <span><i class="bi bi-bar-chart"></i> Semua Level</span>
+              <span><i class="bi bi-person"></i> 30 Slot</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(4)" role="button" tabindex="0">
+          <img src="assets/images/program-functional.svg" alt="Functional" />
+          <div class="card-body-mm">
+            <span class="program-badge">Baru</span>
+            <h5>Functional Fitness</h5>
+            <p>Latihan fungsional berbasis pergerakan alami tubuh untuk meningkatkan kekuatan, mobilitas, dan keseimbangan.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 75 Menit</span>
+              <span><i class="bi bi-bar-chart"></i> Intermediate</span>
+              <span><i class="bi bi-person"></i> 15 Slot</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="program-card" onclick="openProgram(5)" role="button" tabindex="0">
+          <img src="assets/images/program-yoga.svg" alt="Yoga" />
+          <div class="card-body-mm">
+            <span class="program-badge">Relaksasi</span>
+            <h5>Yoga &amp; Stretching</h5>
+            <p>Program fleksibilitas dan pemulihan untuk menjaga keseimbangan tubuh dan pikiran pasca latihan berat.</p>
+            <div class="program-meta">
+              <span><i class="bi bi-clock"></i> 60 Menit</span>
+              <span><i class="bi bi-bar-chart"></i> Semua Level</span>
+              <span><i class="bi bi-person"></i> 20 Slot</span>
+            </div>
+            <div class="view-detail-hint"><i class="bi bi-arrow-right-circle-fill"></i> Lihat Detail Program</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  ===== END PROGRAMS ===== -->
+  <!-- ===== SCHEDULE ===== -->
+<section id="schedule">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col reveal">
+        <p class="section-tag">Jadwal Kelas</p>
+        <h2 class="section-title">JADWAL MINGGUAN</h2>
+        <div class="red-line"></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <ul class="nav schedule-tabs flex-wrap gap-2 mb-4" id="schedTab">
+        <li class="nav-item"><a class="nav-link active" data-day="senin" href="#">Senin</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="selasa" href="#">Selasa</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="rabu" href="#">Rabu</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="kamis" href="#">Kamis</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="jumat" href="#">Jumat</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="sabtu" href="#">Sabtu</a></li>
+        <li class="nav-item"><a class="nav-link" data-day="minggu" href="#">Minggu</a></li>
+      </ul>
+      <div class="table-responsive">
+        <table class="schedule-table" id="scheduleTable">
+          <thead>
+            <tr>
+              <th>Waktu</th>
+              <th>Program</th>
+              <th>Trainer</th>
+              <th>Durasi</th>
+              <th>Level</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="schedBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== MEMBERSHIP ===== -->
+<section id="membership">
+  <div class="container">
+    <div class="row mb-5 justify-content-center text-center">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag justify-content-center">Paket Membership</p>
+        <h2 class="section-title">PILIH PAKET<br>TERBAIK KAMU</h2>
+        <div class="red-line mx-auto"></div>
+        <p style="color:var(--muted);margin-top:16px;font-size:15px;">Semua paket bisa dipesan langsung via WhatsApp. Tanpa ribet, langsung aktif!</p>
+      </div>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Harian -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="pricing-card">
+          <div class="pricing-tag">Harian</div>
+          <h4 class="pricing-name">GYM HARIAN</h4>
+          <p style="color:var(--muted);font-size:14px;">Masuk bebas tanpa daftar member</p>
+          <div class="pricing-price">20K</div>
+          <p class="pricing-period">per kunjungan</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Akses Penuh Area Gym</li>
+            <li><i class="bi bi-check-circle-fill"></i> Kelas Aerobik / Zumba</li>
+            <li><i class="bi bi-check-circle-fill"></i> Loker &amp; Shower</li>
+            <li class="disabled"><i class="bi bi-x-circle-fill"></i> Konsultasi Trainer</li>
+            <li class="disabled"><i class="bi bi-x-circle-fill"></i> Program Custom</li>
+          </ul>
+          <button class="btn-pricing" onclick="orderWA('Gym Harian – Rp 20.000/kunjungan')">
+            <i class="bi bi-whatsapp"></i> Daftar via WA
+          </button>
+        </div>
+      </div>
+
+      <!-- Member Bulanan -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="pricing-card">
+          <div class="pricing-tag">Bulanan</div>
+          <h4 class="pricing-name">MEMBER BULANAN</h4>
+          <p style="color:var(--muted);font-size:14px;">Individu • latihan rutin</p>
+          <div class="pricing-price">150K</div>
+          <p class="pricing-period">per bulan</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Akses Penuh Area Gym</li>
+            <li><i class="bi bi-check-circle-fill"></i> Kelas Aerobik / Zumba Unlimited</li>
+            <li><i class="bi bi-check-circle-fill"></i> Loker &amp; Shower</li>
+            <li><i class="bi bi-check-circle-fill"></i> Konsultasi Trainer</li>
+            <li class="disabled"><i class="bi bi-x-circle-fill"></i> Sesi PT</li>
+          </ul>
+          <button class="btn-pricing" onclick="orderWA('Member Gym Bulanan Individu – Rp 150.000')">
+            <i class="bi bi-whatsapp"></i> Daftar via WA
+          </button>
+        </div>
+      </div>
+
+      <!-- Couple -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="pricing-card featured">
+          <span class="popular-badge">💑 Couple Hemat</span>
+          <div class="pricing-tag">Couple</div>
+          <h4 class="pricing-name">COUPLE GYM</h4>
+          <p style="color:rgba(255,255,255,.75);font-size:14px;">2 orang • lebih hemat</p>
+          <div class="pricing-price">250K</div>
+          <p class="pricing-period">per bulan (2 orang)</p>
+          <p style="color:var(--gold);font-size:12px;font-weight:700;margin-top:2px;">Hemat Rp 50.000!</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> 2 Orang Member Penuh</li>
+            <li><i class="bi bi-check-circle-fill"></i> Akses Penuh Area Gym</li>
+            <li><i class="bi bi-check-circle-fill"></i> Kelas Aerobik / Zumba Unlimited</li>
+            <li><i class="bi bi-check-circle-fill"></i> Loker &amp; Shower</li>
+            <li class="disabled"><i class="bi bi-x-circle-fill"></i> Sesi PT</li>
+          </ul>
+          <button class="btn-pricing" onclick="orderWA('Couple Gym – Rp 250.000/bulan (2 orang)')">
+            <i class="bi bi-whatsapp"></i> Daftar via WA
+          </button>
+        </div>
+      </div>
+
+      <!-- Member 6 Bulan -->
+      <div class="col-md-6 col-lg-3 reveal">
+        <div class="pricing-card">
+          <div class="pricing-tag" style="color:var(--gold);">6 Bulan</div>
+          <h4 class="pricing-name">MEMBER 6 BULAN</h4>
+          <p style="color:var(--muted);font-size:14px;">Individu • free diskon 10%</p>
+          <div class="pricing-price" style="font-size:clamp(28px,5vw,42px);">810K</div>
+          <p class="pricing-period" style="text-decoration:line-through;color:var(--muted);font-size:12px;">Normal Rp 900.000</p>
+          <p style="color:var(--gold);font-size:12px;font-weight:700;margin-top:2px;">Free diskon 10%!</p>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Akses Penuh Area Gym 6 Bln</li>
+            <li><i class="bi bi-check-circle-fill"></i> Kelas Aerobik / Zumba Unlimited</li>
+            <li><i class="bi bi-check-circle-fill"></i> Loker &amp; Shower</li>
+            <li><i class="bi bi-check-circle-fill"></i> Konsultasi Trainer</li>
+            <li><i class="bi bi-check-circle-fill"></i> Hemat Rp 90.000</li>
+          </ul>
+          <button class="btn-pricing" onclick="orderWA('Member Gym 6 Bulan – Rp 810.000 (diskon 10%)')">
+            <i class="bi bi-whatsapp"></i> Daftar via WA
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="membership.html" style="color:var(--red);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.05em;text-decoration:none;">
+        Lihat semua paket lengkap (termasuk PT &amp; Group) <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- ===== TRAINERS ===== -->
+<section id="trainers">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag">Tim Trainer</p>
+        <h2 class="section-title">TRAINER<br>PROFESIONAL KAMI</h2>
+        <div class="red-line"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-6 col-md-3 reveal">
+        <div class="trainer-card">
+          <img class="trainer-img" src="assets/images/trainer-1.svg" alt="Trainer 1" />
+          <div class="trainer-info">
+            <h5>Budi Santoso</h5>
+            <p class="trainer-role">Head Trainer · Bodybuilding</p>
+            <div class="trainer-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="trainer-card">
+          <img class="trainer-img" src="assets/images/trainer-2.svg" alt="Trainer 2" />
+          <div class="trainer-info">
+            <h5>Dewi Pratiwi</h5>
+            <p class="trainer-role">Senior Trainer · Zumba</p>
+            <div class="trainer-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="trainer-card">
+          <img class="trainer-img" src="assets/images/trainer-3.svg" alt="Trainer 3" />
+          <div class="trainer-info">
+            <h5>Rizky Firmansyah</h5>
+            <p class="trainer-role">Trainer · HIIT &amp; Cardio</p>
+            <div class="trainer-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 reveal">
+        <div class="trainer-card">
+          <img class="trainer-img" src="assets/images/trainer-4.svg" alt="Trainer 4" />
+          <div class="trainer-info">
+            <h5>Sari Wulandari</h5>
+            <p class="trainer-role">Trainer · Yoga &amp; Functional</p>
+            <div class="trainer-socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag">Galeri</p>
+        <h2 class="section-title">SUASANA<br>MUSCLEMAX</h2>
+        <div class="red-line"></div>
+      </div>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="assets/images/gallery-1.svg" alt="Gym Floor" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/gallery-2.svg" alt="Weights" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/gallery-3.svg" alt="Cardio Area" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/gallery-4.svg" alt="Training" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/gallery-5.svg" alt="Class" />
+        <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+      </div>
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="https://www.instagram.com/musclemax_mjs/" target="_blank" class="btn-outline-mm" style="display:inline-flex;">
+        <i class="bi bi-instagram"></i> Follow @musclemax_mjs
+      </a>
+    </div>
+  </div>
+</section>
+  <!-- ===== BOOKING ===== -->
+<section id="booking">
+  <div class="container">
+    <div class="row mb-5 justify-content-center text-center">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag justify-content-center">Daftar Member</p>
+        <h2 class="section-title">MULAI PERJALANAN<br>FITNESS KAMU</h2>
+        <div class="red-line mx-auto"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 reveal">
+        <div class="booking-wrap">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label class="form-label-mm">Nama Lengkap</label>
+              <input type="text" class="form-control-mm" id="f_name" placeholder="Masukkan nama lengkap kamu" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-mm">Nomor WhatsApp</label>
+              <input type="tel" class="form-control-mm" id="f_wa" placeholder="08xxxxxxxxxx" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-mm">Pilih Program</label>
+              <select class="form-control-mm" id="f_program">
+                <option value="">-- Pilih Program --</option>
+                <option>Bodybuilding &amp; Mass</option>
+                <option>HIIT Cardio Blast</option>
+                <option>Personal Training</option>
+                <option>Zumba &amp; Aerobik</option>
+                <option>Functional Fitness</option>
+                <option>Yoga &amp; Stretching</option>
+                <option>Hanya Member Gym (Free Access)</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label-mm">Paket Membership</label>
+              <select class="form-control-mm" id="f_pkg">
+                <option value="">-- Pilih Paket --</option>
+                <option>Day Pass – Rp 15.000</option>
+                <option>Member Bulanan – Rp 150.000</option>
+                <option>Pro – Rp 250.000/bulan</option>
+                <option>Elite – Rp 2.000.000/tahun</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label-mm">Pesan / Pertanyaan (Opsional)</label>
+              <textarea class="form-control-mm" id="f_msg" rows="3" placeholder="Ceritakan goal fitness kamu atau pertanyaan lainnya..."></textarea>
+            </div>
+            <div class="col-12">
+              <button class="wa-order-btn" onclick="sendOrderWA()">
+                <i class="bi bi-whatsapp"></i> Kirim Order via WhatsApp
+              </button>
+              <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:12px;">
+                <i class="bi bi-lock-fill" style="color:var(--red)"></i> Data kamu aman. Kami hanya menghubungi via WA untuk konfirmasi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Info Kontak Samping -->
+      <div class="col-lg-4 reveal">
+        <div style="padding-left:clamp(0px,2vw,30px)">
+          <div class="about-feature mb-3">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <h6>Lokasi</h6>
+              <p>Jl. Pahlawan No. 28 (Ruko Area Belakang), Sarirejo, Mojosari</p>
+            </div>
+          </div>
+          <div class="about-feature mb-3">
+            <i class="bi bi-clock-fill"></i>
+            <div>
+              <h6>Jam Operasional</h6>
+              <p>Senin – Minggu: 08:00 – 22:00</p>
+            </div>
+          </div>
+          <div class="about-feature mb-3">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <h6>WhatsApp</h6>
+              <p>+62 822-3120-2288</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <i class="bi bi-instagram"></i>
+            <div>
+              <h6>Instagram</h6>
+              <p>@musclemax_mjs</p>
+            </div>
+          </div>
+          <div style="margin-top:24px; border-radius:10px; overflow:hidden; height:200px; background:var(--grey); display:flex; align-items:center; justify-content:center;">
+            <a href="https://maps.google.com/?q=Mojosari+Mojokerto" target="_blank" style="color:var(--red);text-decoration:none;text-align:center;">
+              <i class="bi bi-map" style="font-size:36px;display:block;margin-bottom:10px;"></i>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.1em;text-transform:uppercase;">Buka di Google Maps</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="row mb-5 justify-content-center text-center">
+      <div class="col-lg-6 reveal">
+        <p class="section-tag justify-content-center">Testimoni</p>
+        <h2 class="section-title">KATA MEMBER<br>KAMI</h2>
+        <div class="red-line mx-auto"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="testimonial-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Sudah 8 bulan di MuscleMax Mojosari. Berat badan turun 15 kg, otot terbentuk, dan yang paling penting kepercayaan diri naik banget. Trainer-nya supportif banget!</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <div class="testi-name">Ahmad Fauzi</div>
+              <div class="testi-since">Member sejak 2023 · Pro Package</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="testimonial-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Gym paling lengkap di Mojosari! Alatnya banyak, bersih, dan trainer-nya profesional. Kelas Zumba-nya seru banget, bikin nggak kerasa capek!</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div>
+              <div class="testi-name">Rina Kusuma</div>
+              <div class="testi-since">Member sejak 2022 · Elite Package</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="testimonial-card">
+          <div class="testi-quote">"</div>
+          <p class="testi-text">Personal Training di sini beda banget. Programnya benar-benar disesuaikan sama kondisi tubuh saya. Dalam 3 bulan progress saya kelihatan banget perubahannya.</p>
+          <div class="testi-stars">★★★★★</div>
+          <div class="testi-author">
+            <div class="testi-avatar">D</div>
+            <div>
+              <div class="testi-name">Dimas Prasetyo</div>
+              <div class="testi-since">Member sejak 2024 · Personal Training</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== FAQ ===== -->
+<section id="faq">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-7 text-center reveal">
+        <p class="section-tag justify-content-center">FAQ</p>
+        <h2 class="section-title">PERTANYAAN<br>YANG SERING DITANYA</h2>
+        <div class="red-line mx-auto"></div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 reveal">
+        <div class="accordion accordion-mm" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Bagaimana cara mendaftar menjadi member?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Kamu bisa mendaftar langsung via WhatsApp, mengisi form di website ini, atau datang langsung ke gym kami. Tim kami akan segera merespons dan memandu proses pendaftaranmu.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Apakah ada fasilitas loker dan kamar mandi?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Ya! MuscleMax Mojosari menyediakan loker dan kamar mandi dengan shower untuk semua member. Fasilitas ini termasuk dalam semua paket membership kami.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Apakah bisa trial dulu sebelum daftar member?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Tentu! Kamu bisa menggunakan Day Pass seharga Rp 15.000 untuk mencoba fasilitas gym kami sebelum memutuskan paket membership yang tepat.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                Apakah ada program untuk pemula yang sama sekali belum pernah gym?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Pastinya ada! Semua trainer kami siap membimbing member baru dari nol. Kami juga menyediakan program orientasi gratis untuk member baru agar langsung nyaman berolahraga di MuscleMax.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                Apakah pembayaran bisa dicicil atau transfer bank?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Kami menerima pembayaran tunai, transfer bank (BCA, BRI, Mandiri), dan dompet digital (GoPay, OVO, DANA). Hubungi kami via WhatsApp untuk informasi lebih lanjut tentang metode pembayaran.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- ===== CTA BANNER ===== -->
+<section id="cta">
+  <div class="container position-relative z-1">
+    <div class="row align-items-center justify-content-between g-4">
+      <div class="col-lg-7 reveal">
+        <h2 class="cta-title">SIAP MEMULAI<br>TRANSFORMASIMU?</h2>
+        <p class="cta-sub">Gabung ribuan member MuscleMax Mojosari dan wujudkan tubuh impianmu hari ini.</p>
+      </div>
+      <div class="col-lg-4 text-lg-end reveal">
+        <a href="https://wa.me/6282231202288?text=Halo%20MuscleMax!%20Saya%20mau%20daftar%20member%20sekarang." target="_blank" class="btn-primary-mm" style="background:#fff;color:var(--red);display:inline-flex;font-size:17px;">
+          <i class="bi bi-whatsapp" style="color:#25D366"></i> Daftar Sekarang via WA
+        </a>
+        <p style="color:rgba(255,255,255,.65);font-size:13px;margin-top:12px;text-align:right;">Balas dalam &lt; 5 menit 🔥</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4 footer-brand">
+        <a class="navbar-brand mb-3" href="#">
+          <img src="data:image/png;base64,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" alt="MuscleMax Mojosari" class="navbar-logo-img" />
+        </a>
+        <p>Gym & Fitness Center terbaik di Mojosari. Fasilitas lengkap, trainer profesional, komunitas solid.</p>
+        <div class="social-links mt-4">
+          <a href="https://www.instagram.com/musclemax_mjs/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/6282231202288" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.tiktok.com/@musclemax_mjs" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <p class="footer-title">Menu</p>
+        <ul>
+          <li><a href="about.html"><i class="bi bi-chevron-right"></i> Tentang</a></li>
+          <li><a href="membership.html"><i class="bi bi-chevron-right"></i> Membership</a></li>
+          <li><a href="schedule.html"><i class="bi bi-chevron-right"></i> Jadwal</a></li>
+          <li><a href="membership.html"><i class="bi bi-chevron-right"></i> Membership</a></li>
+          <li><a href="gallery.html"><i class="bi bi-chevron-right"></i> Galeri</a></li>
+          <li><a href="promo.html"><i class="bi bi-chevron-right"></i> Promo</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <p class="footer-title">Program</p>
+        <ul>
+          <li><a href="programs.html"><i class="bi bi-chevron-right"></i> Bodybuilding</a></li>
+          <li><a href="programs.html"><i class="bi bi-chevron-right"></i> HIIT Cardio</a></li>
+          <li><a href="programs.html"><i class="bi bi-chevron-right"></i> Personal Training</a></li>
+          <li><a href="programs.html"><i class="bi bi-chevron-right"></i> Zumba</a></li>
+          <li><a href="programs.html"><i class="bi bi-chevron-right"></i> Yoga &amp; Stretching</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <p class="footer-title">Kontak</p>
+        <ul>
+          <li><a href="#"><i class="bi bi-geo-alt-fill"></i> Jl. Pahlawan No. 28, Sarirejo – Mojosari</a></li>
+          <li><a href="https://wa.me/6282231202288" target="_blank"><i class="bi bi-whatsapp"></i> +62 822-3120-2288</a></li>
+          <li><a href="https://www.instagram.com/musclemax_mjs/" target="_blank"><i class="bi bi-instagram"></i> @musclemax_mjs</a></li>
+          <li><a href="#"><i class="bi bi-clock"></i> Sen–Min: 08:00–22:00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>MuscleMax Mojosari</span>. All rights reserved.</p>
+      <p>Didesain dengan ❤️ untuk komunitas fitness Mojosari</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

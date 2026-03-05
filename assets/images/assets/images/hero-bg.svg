@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#1a1a1a"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="450" x2="1600" y2="450" stroke="#E8141E" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#E8141E" stroke-width="1" stroke-dasharray="8,6" opacity="0.3"/>
+  <!-- Border -->
+  <rect x="12" y="12" width="1576" height="876" fill="none" stroke="#E8141E" stroke-width="2" stroke-dasharray="12,8" opacity="0.5"/>
+  <!-- Corner brackets -->
+  <path d="M20,20 L50,20 M20,20 L20,50" stroke="#E8141E" stroke-width="3" fill="none"/>
+  <path d="M1580,20 L1550,20 M1580,20 L1580,50" stroke="#E8141E" stroke-width="3" fill="none"/>
+  <path d="M20,880 L50,880 M20,880 L20,850" stroke="#E8141E" stroke-width="3" fill="none"/>
+  <path d="M1580,880 L1550,880 M1580,880 L1580,850" stroke="#E8141E" stroke-width="3" fill="none"/>
+  <!-- Center icon: camera/image symbol -->
+  <rect x="770" y="398" width="60" height="46" rx="6" fill="none" stroke="#E8141E" stroke-width="2" opacity="0.6"/>
+  <circle cx="800" cy="421" r="12" fill="none" stroke="#E8141E" stroke-width="2" opacity="0.6"/>
+  <rect x="794" y="392" width="12" height="8" rx="2" fill="#E8141E" opacity="0.6"/>
+  <!-- Label -->
+  <text x="800" y="436" fill="#E8141E" font-size="16" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle" letter-spacing="1">HERO BACKGROUND</text><text x="800" y="464" fill="#E8141E" font-size="16" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle" letter-spacing="1">1600×900px</text>
+  <!-- Watermark size -->
+  <text x="1584" y="888" fill="#E8141E" font-size="11" font-family="Arial" text-anchor="end" opacity="0.4">1600×900</text>
+</svg>
