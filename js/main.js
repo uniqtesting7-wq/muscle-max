@@ -89,6 +89,23 @@ function renderScheduleTarget(day, tbodyId) {
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('schedBody'))  renderScheduleTarget('senin', 'schedBody');
   if (document.getElementById('schedBody2')) renderScheduleTarget('senin', 'schedBody2');
+  
+  // Schedule tabs event handler
+  document.querySelectorAll('.schedule-tabs .nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const day = this.getAttribute('data-day');
+      if (!day) return;
+      
+      // Update active tab
+      document.querySelectorAll('.schedule-tabs .nav-link').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Render schedule for selected day
+      const isSchedulePage = document.getElementById('schedBody2');
+      renderScheduleTarget(day, isSchedulePage ? 'schedBody2' : 'schedBody');
+    });
+  });
 });
 
 /* ===== WA ORDER ===== */
